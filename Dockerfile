@@ -23,7 +23,7 @@ RUN chmod 755 /*.sh
 
 ADD my.cnf /etc/mysql/conf.d/my.cnf
 ADD supervisord-apache2.conf /etc/supervisor/conf.d/supervisord-apache2.conf
-ADD supervisord-mysqld.conf /etc/supervisor/conf.d/supervisord-mysqld.conf
+#ADD supervisord-mysqld.conf /etc/supervisor/conf.d/supervisord-mysqld.conf
 
 # Remove pre-installed database
 RUN rm -rf /var/lib/mysql/*
